@@ -24,3 +24,8 @@ jobs:
         with:
           username: '${{ secrets.DOCKERHUB_USERNAME }}'
           password: '${{ secrets.DOCKERHUB_TOKEN }}'
+      - name: push to dockerhub
+        run: docker build -t latest .
+        run: docker build -t myfirstweb .
+        
+
