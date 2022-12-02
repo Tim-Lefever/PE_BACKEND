@@ -26,8 +26,8 @@ jobs:
           username: '${{ secrets.DOCKERHUB_USERNAME }}'
           password: '${{ secrets.DOCKERHUB_TOKEN }}'
       - name: build image
-        run: docker build -t latest .
+        run: docker build -t timlefever/pe-opsy-backend .
       - name: push to dockerhub
-        run: docker push timlefever/pe-opsy-backend:latest
+        run: docker push timlefever/pe-opsy-backend
         
 
