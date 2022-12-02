@@ -28,6 +28,6 @@ jobs:
       - name: build image
         run: docker build -t latest .
       - name: push to dockerhub
-        run: docker push timlefever/pe-opsy-frontend:tagname
+        run: docker push timlefever/pe-opsy-backend:tagname
         
 
